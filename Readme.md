@@ -34,7 +34,7 @@ display a confusion matrix at the end of one epoch.
 
 The confusion matrix looks like this
 
-![](pics/Screenshot from 2020-01-10 11-46-20.png)
+![](ml/pics/Screenshot from 2020-01-10 11-46-20.png)
 
 # Android Demo
 The android app is built using Kotlin language.
