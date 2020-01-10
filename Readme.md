@@ -34,7 +34,7 @@ display a confusion matrix at the end of one epoch.
 
 The confusion matrix looks like
 
-![](https://github.com/kongkip/SpeakerRecognition/tree/master/pics/CM.png)
+![](pics/CM.png)
 
 # Android Demo
 The android app is built using Kotlin language.
