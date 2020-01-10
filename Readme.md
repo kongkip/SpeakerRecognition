@@ -48,3 +48,5 @@ python reconstruct_model_and_convert.py -checkpoint_dir ml/checkpoints/spectrogr
 
 # Android Demo
 The android app is built using Kotlin language.
+
+![](pics/ezgif.com-video-to-gif.gif)
