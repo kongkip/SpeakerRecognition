@@ -32,9 +32,8 @@ python train.py -data_dirs 16000_pcm_speeches
 where the 16000_pcm_speeches is the dataset. While training model accuracy is computed then
 display a confusion matrix at the end of one epoch.
 
-The confusion matrix looks like this
-
-![](ml/pics/Screenshot from 2020-01-10 11-46-20.png)
+The confusion matrix looks like
+![this](https://github.com/kongkip/SpeakerRecognition/tree/master/pics/Screenshot from 2020-01-10 11-46-20.png)
 
 # Android Demo
 The android app is built using Kotlin language.
