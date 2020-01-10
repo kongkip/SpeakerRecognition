@@ -41,7 +41,8 @@ Training creates a checkpoint folder and saves best model weights.
 # Model Conversion
 Saved weights are loaded and model converted to TFLite using the following script
 ```bash
-python reconstruct_model_and_coonvert.py
+python reconstruct_model_and_convert.py -checkpoint_dir ml/checkpoints/spectrogram_model/20200110-124824/
+
 ```
 
 
