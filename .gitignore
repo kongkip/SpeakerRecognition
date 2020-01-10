@@ -1,2 +1,3 @@
 .idea/
-ml/checkpoints/
+ml/checkpoints
+ml/logs/

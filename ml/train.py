@@ -61,7 +61,7 @@ if __name__ == '__main__':
     batch_size = args.batch_size
     classes = get_classes(wanted_only=True)
     wanted_words = prepare_words_list(get_classes(wanted_only=True))
-    with open("labels/conv_labels.txt", "w") as labels:
+    with open("ml/labels/conv_labels.txt", "w") as labels:
         for label in wanted_words:
             labels.write('%s\n' % label)
     model_settings = prepare_model_settings(
@@ -91,7 +91,7 @@ if __name__ == '__main__':
                          **model_settings)
 
     # embed()
-    checkpoint_path = 'checkpoints/spectrogram_model/' + \
+    checkpoint_path = 'ml/checkpoints/spectrogram_model/' + \
                       datetime.now().strftime("%Y%m%d-%H%M%S") + "/cp.ckpt"
     checkpoint_dir = os.path.dirname(checkpoint_path)
     callbacks = [
@@ -108,7 +108,7 @@ if __name__ == '__main__':
             patience=4,
             verbose=20,
             min_lr=1e-5),
-        tf.keras.callbacks.TensorBoard(log_dir='logs/' + datetime.now().strftime("%Y%m%d-%H%M%S")),
+        tf.keras.callbacks.TensorBoard(log_dir='ml/logs/' + datetime.now().strftime("%Y%m%d-%H%M%S")),
         tf.keras.callbacks.ModelCheckpoint(
             checkpoint_path,
             save_best_only=True,
@@ -121,7 +121,7 @@ if __name__ == '__main__':
     model.fit_generator(
         train_gen,
         steps_per_epoch=ap.set_size('training') // batch_size,
-        epochs=10,
+        epochs=1,
         verbose=1,
         callbacks=callbacks)
 

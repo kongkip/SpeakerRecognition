@@ -36,5 +36,14 @@ The confusion matrix looks like
 
 ![](pics/CM.png)
 
+Training creates a checkpoint folder and saves best model weights.
+
+# Model Conversion
+Saved weights are loaded and model converted to TFLite using the following script
+```bash
+python reconstruct_model_and_coonvert.py
+```
+
+
 # Android Demo
 The android app is built using Kotlin language.
